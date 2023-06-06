@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>h3lloSoci3ty</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+<body>
+  <header>  
+    <div class="container">
+      <div class="row">
+        <div class="four columns" style="">
+          <h1 class="title-anim" style="font-size: 70px; color: #7C1010;"><a href="../index.html">helloSociety</a></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article style="margin-top: 5%;">
+    <form method = "post" action="../../Model/Model.php" method="get" class="formDB">
+        <div class="container" style="max-width: 600px;">
+            <div class="row">
+                <div class="four columns">
+                    <label for="skeNickname">Nom</label>
+                    <input class="u-full-width" type="text" id="skeNickname" name="ske_nickname">
+                </div>
+                <div class="four columns">
+                    <label for="skeName">Prenom</label>
+                    <input class="u-full-width" type="text" id="skeName" name="ske_name">
+                </div>
+                <div class="four columns">
+                    <label for="ske_gender">Sexe</label>
+                    <select class="u-full-width" id="skeGender" name="ske_gender" >
+                        <option value="Male">Male</option>
+                        <option value="Female">Femelle</option>
+                        <option value="Non-Binary">Non-Binaire</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2%;">
+                <div class="eight columns">
+                    <label for="skeEmail">Email</label>
+                    <input class="u-full-width" type="text" id="skeEmail" name="ske_email">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="eight columns">
+                    <label>
+                        <input type="checkbox" name="ske_validation1">
+                        <span class="label-body">Recevoir la newsletter de h3lloSoci3ty</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="eight columns">
+                    <label>
+                        <input type="checkbox" name="ske_validation2">
+                        <span class="label-body">Vous acceptez la charte et règles de l'utilisateur</span>
+                    </label>
+                </div>  
+                <div class="four columns">
+                    <input class="button-primary u-pull-right" type="submit" value="Envoyer">
+                </div>
+            </div>
+        </div>
+    </form>
+  </article>
+
+</body>
+</html>
